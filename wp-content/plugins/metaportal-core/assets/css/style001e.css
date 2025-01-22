@@ -1495,6 +1495,10 @@ a.metaportal_fn_videobutton,
 
 
 .fn_cs_simplecarousel .fn__maintitle{
+	position: absolute;
+left: 20px;
+right: 20px;
+bottom: 34px;
 	
 	font-size: 30px;
 	text-align: center;
@@ -2003,20 +2007,31 @@ timeline */
   }
   .client .container .card {
 	position: relative;
-	width: 350px;
+	width: 500px;
 	height: 400px;
 	margin: 1em;
-	background: rgba(255, 255, 255, 0.05);
+	/* background: rgba(255, 255, 255, 0.05); */
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-end;
+	align-items: flex-start;
 	flex-direction: column;
-	backdrop-filter: blur(40px);
+	/* backdrop-filter: blur(40px); */
 	border: solid 2px transparent;
 	background-clip: padding-box;
+	padding: 0 50px;
 	box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
+  }
+  .card1{
+	background-image: url('../../../../../img/client1.png');
+	background-position: center;
+	background-size: cover;
+  }
+  .card2{
+	background-image: url('../../../../../img/client2.png');
+	background-position: center;
+	background-size: cover;
   }
   .client .container .card .content {
 	position: relative;
@@ -2024,8 +2039,10 @@ timeline */
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	opacity: 0.5;
+	color: #020202;
 	transition: 0.5s;
+	opacity: 1;
+
   }
   .client .container .card .content .img {
 	position: relative;
@@ -2044,7 +2061,7 @@ timeline */
 	object-fit: cover;
   }
   .client.container .card .content .cardContent h3 {
-	color: #fff;
+
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 500;
@@ -2060,7 +2077,8 @@ timeline */
   }
   .client .container .card .sci {
 	position: absolute;
-	bottom: 50px;
+	right: 0%;
+	bottom: 55px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2076,10 +2094,7 @@ timeline */
   .client .container .card .sci li a {
 	font-size: 24px;
   }
-  .client .container .card:hover .content {
-	opacity: 1;
-	transform: translateY(-20px);
-  }
+
   .client .container .card:hover .sci li {
 	transform: translateY(0px);
 	opacity: 1;
@@ -2088,123 +2103,6 @@ timeline */
 
   /* customer section */
 
-
-  .custom {
-	display: grid;
-	place-items: center;
-	position: relative;
-	height: 100vh;
-	background-color: transparent;
-  
-  }
-  
-  .swiper-container {
-	border-radius: 5px;
-	width: 70vw;
-	overflow: hidden;
-	height: fit-content;
-	height: fit-content;
-	font-size: 50px;
-	position: relative;
-	padding-bottom: 50px;
-	font-family: sans-serif;
-  }
-  
-
-  
-  .swiper-slide .ImgHolder {
-	background-color: #021c8d27;
-	display: flex;
-	width: 100%;
-	height: auto;
-	padding: 30px;
-	border-bottom-left-radius: 20px;
-  
-  }
-  
-  .ContentHolder::before {
-	background-color: #4362ee4a;
-	content: '';
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	top: -5px;
-	z-index: -1;
-	right: 0px;
-  }
-  
-  .ContentHolder {
-	position: relative;
-	padding: 10px;
-	background-color: rgba(255, 255, 255, 0.195);
-	border-top-right-radius: 20px;
-  }
-  
-  .swiper-pagination-bullet {
-	background-color: rgba(255, 255, 255, 0);
-	opacity: 1;
-	border: 1px solid #000000;
-  }
-  
-  .swiper-pagination-bullet-active {
-	background-color: #000000;
-  }
-  
-  .swiper-button {
-	border: 1px solid white;
-  }
-  
-  .swiper-slide img {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	margin: auto;
-	object-fit: cover;
-	border: 3px solid #4361ee;
-	outline: 2px solid white;
-  }
-  
-  .swiper-slide h3 {
-	font-size: 1.1rem;
-	text-align: center;
-	font-weight: bold;
-  }
-  
-  .swiper-slide p {
-	color: #ffffff85;
-	
-	font-size: 1rem;
-	padding: 5px;
-  }
-  
-  @media (max-width:638px) {
-	.swiper-container {
-	  width: 100%;
-	}
-  }
-  
-  @media (max-width:500px) {
-	.swiper-container {
-	  width: 70vw;
-	}
-  }
-  
-  @media (max-width:300px) {
-	.swiper-container {
-	  width: 100%;
-	}
-  
-	.swiper-slide {
-	  border-radius: 0px;
-	}
-  
-	.swiper-container .ImgHolder {
-	  border-radius: 0px;
-	}
-	.ContentHolder{
-	  border-radius: 0px;
-	}
-  }
 
   /* brand */
 
@@ -2232,10 +2130,13 @@ timeline */
     position: relative;
 }
 .slider .list .item{
-	border-radius: 2px;
+	backdrop-filter: blur(40px);
+	border: 1px solid #ffffff5c;
+	border-radius: 10px;
+	background-color: #ffffff0c;
 	padding: 10px 20px;
     width: 150px;
-	height: 100px;
+	height: 72px;
     position: absolute;
     left: 100%;
     animation: autoRun 10s linear infinite;
