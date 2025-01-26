@@ -6600,13 +6600,14 @@ a.header__search.header-search-btn p {
   transition: all 0.4s;
 }
 .servcie2.service-page-sec .servcie2-box {
-  background-color: #F8F9FA;
+  background-color: #0a2982;
   border: none;
   padding: 24px;
   position: relative;
   margin-top: 30px;
   transition: all 0.4s;
   border-radius: 7px;
+  min-height: 350px;
 }
 .servcie2.service-page-sec .servcie2-box .heading2 h4 a {
   font-size: var(--f-fs-font-fs20);
