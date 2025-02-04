@@ -23247,3 +23247,31 @@ object-fit: cover;
   }
 }
 
+.contain{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  /* background-color: red; */
+
+}
+.btn-profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px 40px;
+  color: #fff;
+  font-weight: 600;
+  /* background-color: green; */
+}
+
+.btn-profile > span{
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 50px;
+  background-color: #fff;
+}
