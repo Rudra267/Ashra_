@@ -510,7 +510,7 @@
                                 </div>
                                 <div class="heading">
                                     <h5>Send Us a Mail</h5>
-                                    <a href="mailto:admin@techxen.org " class="text">admin@techxen.org </a>
+                                    <a href="mailto:admin@techxen.org" class="text">admin@techxen.org </a>
                                 </div>
                             </div>
 
@@ -530,48 +530,47 @@
 
                     <div class="col-lg-6">
                         <div class="contact-form-details">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="single-input">
-                                            <input type="text" placeholder="First Name">
-                                        </div>
+                          <form method="POST" action="#" id="contactForm">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="single-input">
+                                        <input type="text" id="Fname" name="Fname" placeholder="First Name">
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="single-input">
-                                            <input type="text" placeholder="Last Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="single-input">
-                                            <input type="email" placeholder="Email">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="single-input">
-                                            <input type="number" placeholder="Phone">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="single-input">
-                                            <input type="text" placeholder="Subject">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="single-input">
-                                            <textarea cols="30" rows="5" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <button class="theme-btn1">Submit <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                                    </div>
-
                                 </div>
-                            </form>
+                                <div class="col-lg-6">
+                                    <div class="single-input">
+                                        <input type="text" id="Lname" name="Lname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                        
+                                <div class="col-lg-6">
+                                    <div class="single-input">
+                                        <input type="email" id="email" name="email" placeholder="Email">
+                                    </div>
+                                </div>
+                        
+                                <div class="col-lg-6">
+                                    <div class="single-input">
+                                        <input type="number" id="PhoneNumber" placeholder="Phone" name="PhoneNumber">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="single-input">
+                                        <input type="text" placeholder="Subject" name="Subject">
+                                    </div>
+                                </div>
+                        
+                                <div class="col-lg-12">
+                                    <div class="single-input">
+                                        <textarea cols="30" rows="5" id="message" placeholder="Message" name="message"></textarea>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-lg-12">
+                                    <button type="submit" class="theme-btn1">Submit<span><i class="fa-solid fa-arrow-right"></i></span></button>
+                                </div>
+                            </div>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -688,7 +687,7 @@
                                       <img src="assets/img/icons/footer1-icon3.png" alt="">
                                     </div>
                                     <div class="pera">
-                                      <a href="mailto:">info@ashratech.com​</a>
+                                      <a href="mailto:info@ashratech.com">info@ashratech.com​</a>
                                     </div>
                                   </div>
 
@@ -729,16 +728,31 @@
   
             </div>
     
-        
                 <!--===== FOOTER AREA END =======-->
-
-
-
-
 
         <script>
 
      </script>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form reload
+    sendEmail();
+});
+</script>
+
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey: "wHoJ4Ei5XycDcuQ3i",
+       });
+    })();
+ </script>
+ <script src="./assets/js/email.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
      <script src="assets/js/bootstrap.min.js"></script>
