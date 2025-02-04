@@ -184,7 +184,9 @@ CSS LIST
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
-
+.black{
+  color: #fff !important;
+}
 .shape-animaiton3 {
   position: relative;
   animation-name: shape-animaiton3;
@@ -23208,3 +23210,40 @@ li.has-dropdown1 span {
 .header-area.header-area10 .main-menu-ex.main-menu-ex1 ul li a.active {
   color: #24908D;
 }/*# sourceMappingURL=main.css.map */
+
+
+@media (max-width: 1000px){
+  .about-solution .images{
+    text-align: center;
+  }
+  .about-solution .images img{
+    padding: 20px;
+ 
+    width: 200px !important;
+  }
+}
+
+.heading-first{
+  width: 100%;
+  font-size: 5vw;
+  position: absolute;
+  left: 54%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  
+  color: #f0f0f0;
+  z-index: 99;
+
+}
+
+.video_section video{
+  height: 100vh;
+object-fit: cover;
+}
+
+@media (max-width:750px){
+  .heading-first{
+    font-size: 40px;
+  }
+}
+

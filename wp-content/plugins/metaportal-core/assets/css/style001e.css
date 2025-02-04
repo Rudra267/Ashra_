@@ -1720,6 +1720,15 @@ filter: brightness(0.5);
 /* 
 timeline */
 
+.elementor-376 .elementor-element.elementor-element-3086b71d > .elementor-element-populated{
+	padding: 0 40px 0 40px !important;
+}
+
+@media (max-width:768px){
+	.video_section video{
+		transform: translateY(70px) !important;
+	}
+}
 
 
 
@@ -2172,4 +2181,17 @@ timeline */
     }to{
         left: 100%;
     }
+}
+
+
+@media (max-width:500px) {
+	.client{
+		padding: 0;
+	}
+	.cardContent h3{
+		width: 100%;
+	}
+	input[type="password"], input[type="email"], input[type="tel"], input[type="text"]{
+		width: 100%;
+	}
 }
