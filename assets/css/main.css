@@ -70,6 +70,12 @@ CSS LIST
   ANIMATION AREA CSS
  ::::::::::::::::::::::::::
  */
+
+ .mobile-logo > a > img{
+  filter: invert(1);
+ }
+
+
 @keyframes shape-animaiton1 {
   0% {
     transform: translateY(0);
