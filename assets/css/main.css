@@ -23250,7 +23250,9 @@ object-fit: cover;
 .contain{
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 150px;
   /* background-color: red; */
 
@@ -23274,4 +23276,121 @@ object-fit: cover;
   padding: 10px 10px;
   border-radius: 50px;
   background-color: #fff;
+}
+
+
+/* enquireForm */
+
+.Form-main_wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+
+.form-container {
+  background: transparent;
+  padding: 20px;
+  max-width: 80%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+label {
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="file"] {
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.border{
+  border: 1px solid #ccc;
+}
+input[type="file"] {
+  padding: 4px;
+}
+
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit {
+  background-color: #007bff;
+  color: white;
+}
+
+.close {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="file"] {
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 8px 12px;
+  }
 }
