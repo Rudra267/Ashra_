@@ -2086,15 +2086,19 @@ timeline */
   }
   .client .container .card .sci {
 	position: absolute;
-	right: 0%;
-	bottom: 55px;
+	right: 10%;
+	bottom: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
   }
+  
   .client .container .card .sci li {
-	margin: 0 10px;
+    background-color: #fff;
+	padding: 5px 10px;
+	border-radius: 50px;
+	/* margin: 0 10px; */
 	transform: translateY(40px);
 	opacity: 0;
 	transition: 0.5s;

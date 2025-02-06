@@ -10218,7 +10218,7 @@ a.header__search.header-search-btn p {
 }
 .contact-page .contact-boxs .contact-box .icon {
   height: 60px;
-  width: 60px;
+  min-width: 60px;
   background-color: rgba(14, 55, 177, 0.1725490196);
   border-radius: 50%;
   text-align: center;
