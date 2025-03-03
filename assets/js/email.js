@@ -4,10 +4,11 @@ const email = document.getElementById("email");
 const phone = document.getElementById("PhoneNumber");
 const subject = document.getElementById("Subject");
 const mess = document.getElementById("message");
+const service = document.getElementById("service");
 
 function sendEmail() {
 
-    if(!Fname.value || !Lname.value || !email.value || !phone.value || !mess.value){
+    if(!Fname.value || !Lname.value || !email.value || !phone.value || !mess.value || !service.value){
         Swal.fire({
             position: "center",
             icon: "error",
@@ -17,7 +18,7 @@ function sendEmail() {
           });
     }
     else{
-         const bodyMessage = `Subject: ${subject.value} Full Name: ${Fname.value} ${Lname.value} Email: ${email.value} Phone Number: ${phone.value} Message: ${mess.value} `;
+         const bodyMessage = `Subject: ${subject.value} Service:${service.value} Full Name: ${Fname.value} ${Lname.value} Email: ${email.value} Phone Number: ${phone.value} Message: ${mess.value} `;
          
     console.log(bodyMessage)
     var param = {
@@ -26,8 +27,8 @@ function sendEmail() {
         message:bodyMessage
     }
 
- const service_Id = "service_rwm0pzn";
- const template_Id = "template_cvnwjpa"
+ const service_Id = "service_b0ni5sd";
+ const template_Id = "template_msngyjf"
 
     emailjs.send(service_Id,template_Id,param).then((res) =>{
             document.getElementById("Fname").value = "",

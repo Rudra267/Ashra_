@@ -76,6 +76,14 @@ CSS LIST
  }
 
 
+ :root{
+  --mc1: #be00ed;
+  --mc2: #7000FF;
+  --hc: #FFFFFF;
+  --bc: #9BA0B8;
+}
+
+
 @keyframes shape-animaiton1 {
   0% {
     transform: translateY(0);
@@ -7889,7 +7897,7 @@ a.header__search.header-search-btn p {
 .comon-body .sidebar-box-area .download-btns .daownload2 img {
   filter: brightness(40);
 }
-.comon-body .sidebar-box-area .contact-form .single-input input, .comon-body .sidebar-box-area .contact-form .single-input textarea {
+.comon-body .sidebar-box-area .contact-form .single-input input, .comon-body .sidebar-box-area .contact-form .single-input textarea{
   padding: 16px 22px;
   border-radius: 4px;
   border: none;
@@ -17295,7 +17303,7 @@ a.header__search.header-search-btn p {
   padding: 32px;
   border-radius: 7px;
 }
-.contact-form-details .single-input input, .contact-form-details .single-input textarea {
+.contact-form-details .single-input input, .contact-form-details .single-input textarea, .contact-form-details .single-input select {
   padding: 16px;
   border: none;
   background-color: #0000000d;
@@ -17964,6 +17972,7 @@ a.header__search.header-search-btn p {
   transition: all 0.4s;
 }
 .footer1 .single-footer-items .menu-list li a {
+  text-transform: capitalize;
   display: inline-block;
   color: var(--ztc-text-pera-text-1);
   font-size: var(--f-fs-font-fs16);
@@ -22225,6 +22234,7 @@ li.has-dropdown1 span {
 
 
 .header-area.header-area1 .header-elements .main-menu-ex ul li a {
+  text-transform: capitalize;
   color: #fff;
   font-size: 16px;
   display: block;

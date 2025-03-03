@@ -43,10 +43,21 @@ Years of Experience: ${experience.value}`;
         message:bodyMessage
     }
 
- const service_Id = "service_rwm0pzn";
- const template_Id = "template_cvnwjpa";
+ const service_Id = "service_b0ni5sd";
+ const template_Id = "template_msngyjf"
 
     emailjs.send(service_Id,template_Id,param).then((res) =>{
+
+
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: `We will reach to contact you`,
+            showConfirmButton: false,
+            timer: 1500
+          });
+
+
         document.getElementById("first-name").value = "";
         document.getElementById("last-name").value = "";
         document.getElementById("skills").value = "";
@@ -62,13 +73,7 @@ Years of Experience: ${experience.value}`;
         document.getElementById("resume-upload").value = "";
         
 
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: `We will reach to contact you`,
-                showConfirmButton: false,
-                timer: 1500
-              });
+      
         }
 
         
