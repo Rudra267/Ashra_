@@ -58,19 +58,19 @@ Years of Experience: ${experience.value}`;
           });
 
 
-        document.getElementById("first-name").value = "";
-        document.getElementById("last-name").value = "";
-        document.getElementById("skills").value = "";
-        document.getElementById("job-title").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("phone").value = "";
-        document.getElementById("country").value = "";
-        document.getElementById("state").value = "";
-        document.getElementById("city").value = "";
-        document.getElementById("zip").value = "";
-        document.getElementById("salary").value = "";
-        document.getElementById("experience").value = "";
-        document.getElementById("resume-upload").value = "";
+        // document.getElementById("first-name").value = "";
+        // document.getElementById("last-name").value = "";
+        // document.getElementById("skills").value = "";
+        // document.getElementById("job-title").value = "";
+        // document.getElementById("email").value = "";
+        // document.getElementById("phone").value = "";
+        // document.getElementById("country").value = "";
+        // document.getElementById("state").value = "";
+        // document.getElementById("city").value = "";
+        // document.getElementById("zip").value = "";
+        // document.getElementById("salary").value = "";
+        // document.getElementById("experience").value = "";
+        // document.getElementById("resume-upload").value = "";
         
 
       

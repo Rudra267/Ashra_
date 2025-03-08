@@ -31,12 +31,12 @@ function sendEmail() {
  const template_Id = "template_msngyjf"
 
     emailjs.send(service_Id,template_Id,param).then((res) =>{
-            document.getElementById("Fname").value = "",
-            document.getElementById("Lname").value = "",
-            document.getElementById("email").value = "",
-            document.getElementById("PhoneNumber").value = "",
-            document.getElementById("message").value = "",
-            document.getElementById("Subject").value = "",
+            // document.getElementById("Fname").value = "",
+            // document.getElementById("Lname").value = "",
+            // document.getElementById("email").value = "",
+            // document.getElementById("PhoneNumber").value = "",
+            // document.getElementById("message").value = "",
+            // document.getElementById("Subject").value = "",
 
             Swal.fire({
                 position: "center",
